@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake Login Page Detector</title>
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+  <script type="module" src="main.js"></script>
+  <header class="header">
+    <h1>Fake Login Page Detector</h1>
+    <p>Paste a suspicious link. We check if it is a copy of a real login page.</p>
+  </header>
+
+  <main class="container">
+
+    <section class="card" id="scan-section">
+      <label for="url-input">Suspicious URL</label>
+      <input
+        type="text"
+        id="url-input"
+        placeholder="http://localhost:5002/login"
+      >
+      <button id="scan-btn">Scan</button>
+    </section>
+
+    <section id="results" class="hidden">
+      <div id="verdict-box"></div>
+      <div id="compare-box"></div>
+      <div id="reasons-box"></div>
+      <div id="breakdown-box"></div>
+    </section>
+
+  </main>
+
+</body>
+</html>
